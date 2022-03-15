@@ -1,9 +1,11 @@
 public class Risk {
+
   private int pro;
   private int con;
   private int sev;
+  private String level;
 
-  void setPro (int pro) {
+ public void setPro (int pro) {
     this.pro = pro;
   }
   void setCon (int con) {
@@ -11,6 +13,9 @@ public class Risk {
   }
   void setSev (int sev) {
     this.sev = sev;
+  }
+  void setLevel (String level) {
+   this.level = level;
   }
 
   int getPro() {
@@ -21,5 +26,8 @@ public class Risk {
   }
   int getSev() {
     return sev;
+  }
+  String getLevel() {
+   return level;
   }
 }
